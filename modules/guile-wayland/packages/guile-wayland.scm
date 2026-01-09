@@ -141,8 +141,8 @@
       (propagated-inputs '()))))
 
 (define-public guile-wayland
-  (let ((commit "556c76446d4c2f7c5425f9af2d82bd72d8b1f035")
-        (revision "0"))
+  (let ((commit "9c917b4d35debe33051fd11a6521f2d7672b4024")
+        (revision "1"))
     (package
       (name "guile-wayland")
       (version (git-version "0.0.2" revision commit))
@@ -156,7 +156,7 @@
          (file-name (git-file-name name version))
          (sha256
           (base32
-           "1641f2jlffk0jlcz1lh7c0dz2crjgvaywryxqvch79zz1xlvapnb"))))
+           "0bsxs9dy2x3kc43wxb917y6rvbdpcyf2lqrfgn1m3q2adz0k0bvi"))))
       (build-system gnu-build-system)
       (arguments
        (list
