@@ -21,7 +21,7 @@
   #:use-module (gnu packages ibus)
   #:use-module (gnu packages pkg-config)
   #:use-module (gnu packages texinfo)
-  #:use-module (gnu packages wm)
+  #:use-module (gnu packages window-management)
   #:use-module (gnu packages xml)
   #:use-module (gnu packages freedesktop))
 
@@ -238,7 +238,7 @@
              pkg-config
              texinfo
              guile-3.0-latest))
-      (inputs (list guile-3.0-latest wlroots-0.17))
+      (inputs (list guile-3.0-latest wlroots-0.19))
       (propagated-inputs
        (list guile-bytestructures
              guile-wayland
@@ -384,7 +384,7 @@ completing-read procedure.")
                     guile-srfi-189
                     guile-wlroots
                     guile-util572
-                    wlroots-0.17
+                    wlroots-0.19
                     guile-srfi-145
                     guile-xkbcommon
                     guile-libinput
